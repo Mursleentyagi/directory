@@ -41,6 +41,10 @@ summary: This book contains my learning of Database
   path: /tc/
   doc: db/transaction-control.md
 
+- Sql
+  path: /sql/
+  doc: db/sql.md
+
 - Refs
   path: /refs/
   doc: db/refs.md
