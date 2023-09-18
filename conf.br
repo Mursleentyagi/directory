@@ -21,6 +21,7 @@ summary: This book contains my learning of Operating System
 
 
 
+
 -- book: DBMS
 name: Database
 author: Mursleen Tyagi
@@ -35,6 +36,10 @@ summary: This book contains my learning of Database
 - Index
   path: /
   doc: db/index.md
+
+- Transaction Control
+  path: /tc/
+  doc: db/transaction-control.md
 
 - Refs
   path: /refs/
