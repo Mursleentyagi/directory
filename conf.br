@@ -1,0 +1,43 @@
+-- site:
+mount-point: /books
+
+
+-- book: Operating System
+name: Operating System
+author: Mursaleen Tyagi
+path: /os
+summary: This book contains my learning of Operating System
+
+
+# Section
+
+## SubSection
+
+- Index
+  path: /
+  doc: os/index.md
+
+
+
+
+
+-- book: DBMS
+name: Database
+author: Mursleen Tyagi
+path: /db
+summary: This book contains my learning of Database
+
+
+# Section
+
+## Subsection
+
+- Index
+  path: /
+  doc: db/index.md
+
+- Refs
+  path: /refs/
+  doc: db/refs.md
+
+
