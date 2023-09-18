@@ -50,3 +50,21 @@ summary: This book contains my learning of Database
   doc: db/refs.md
 
 
+
+-- book: Rust
+name: Rust
+author: Mursleen
+path: /rust
+summary: This book contains information about my learning of Rust Programming Lang
+
+# Section
+
+## Subsection
+
+- Introduction
+  path: /
+  doc: rust/index.md
+- Install
+  path: /install/
+  doc: rust/install.md
+
