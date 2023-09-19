@@ -17,6 +17,10 @@ summary: This book contains my learning of Operating System
   path: /
   doc: os/index.md
 
+- Process management
+  path:/
+  doc:os/process_management.md
+
 
 
 
