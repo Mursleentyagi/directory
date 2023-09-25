@@ -7,7 +7,7 @@ name: Operating System
 author: Mursaleen Tyagi
 path: /os
 summary: This book contains my learning of Operating System
-
+download-url: https://raw.githubusercontent.com/Mursleentyagi/directory/main/books/
 
 # Section
 
@@ -18,7 +18,7 @@ summary: This book contains my learning of Operating System
   doc: os/index.md
 
 - Process management
-  path:/
+  path: /pm/
   doc:os/process_management.md
 
 
@@ -31,6 +31,7 @@ name: Database
 author: Mursleen Tyagi
 path: /db
 summary: This book contains my learning of Database
+download-url: https://raw.githubusercontent.com/Mursleentyagi/directory/main/books/
 
 
 # Section
@@ -60,6 +61,8 @@ name: Rust
 author: Mursleen
 path: /rust
 summary: This book contains information about my learning of Rust Programming Lang
+download-url: https://raw.githubusercontent.com/Mursleentyagi/directory/main/books/
+
 
 # Section
 

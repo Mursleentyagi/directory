@@ -51,4 +51,9 @@ Process management is a fundamental aspect of modern operating systems that invo
 12. **Process Monitoring and Debugging**:
     - Operating systems provide tools for monitoring and debugging processes, such as task managers and debugging utilities.
 
-In summary, process management in an operating system involves the creation, scheduling, execution, and termination of processes, along with providing mechanisms for synchronization, communication, and resource allocation to ensure efficient and concurrent execution of multiple tasks on a computer system.
+In summary, process management in an operating system involves the creation, scheduling, execution, and termination of processes, 
+along with providing mechanisms for synchronization, communication, and resource allocation to ensure efficient and concurrent execution of multiple tasks on a computer system.
+
+
+![Process State Management](/os/img/process-states.png)
+
