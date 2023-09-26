@@ -55,10 +55,10 @@ In summary, process management in an operating system involves the creation, sch
 along with providing mechanisms for synchronization, communication, and resource allocation to ensure efficient and concurrent execution of multiple tasks on a computer system.
 
 **Process**
-A process is a program under execution.A program after it is compiled is stored on disk(secondary storage).
-A process is stored in the main memory(RAM) with resources allocated it.
-A single program could create multiple processes using fork() or spawn().
-A program is a passive entity as it is not being executed,it is sitting on the disk.While process is an 
+- A process is a program under execution.A program after it is compiled is stored on disk(secondary storage).
+- A process is stored in the main memory(RAM) with resources allocated it.
+- A single program could create multiple processes using fork() or spawn().
+- A program is a passive entity as it is not being executed,it is sitting on the disk.While process is an 
 active entity,because the process is being executed right now.
 ![Process](/os/img/process.png)
 
