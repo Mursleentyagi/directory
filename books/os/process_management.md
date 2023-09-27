@@ -54,7 +54,7 @@ Process management is a fundamental aspect of modern operating systems that invo
 In summary, process management in an operating system involves the creation, scheduling, execution, and termination of processes, 
 along with providing mechanisms for synchronization, communication, and resource allocation to ensure efficient and concurrent execution of multiple tasks on a computer system.
 
-**Process**
+**Process**:
 - A process is a program under execution.A program after it is compiled is stored on disk(secondary storage).
 - A process is stored in the main memory(RAM) with resources allocated it.
 - A single program could create multiple processes using fork() or spawn().
@@ -62,3 +62,53 @@ along with providing mechanisms for synchronization, communication, and resource
 active entity,because the process is being executed right now.
 ![Process](/os/img/process.png)
 
+#Scheduling Algorithm
+1. **FCFS Scheduling Algorithm**:
+- The CPU scheduling algorithm First Come, First Served (FCFS), also known as First In, 
+  First Out (FIFO), allocates the CPU to the processes in the order they are queued in the ready queue.
+- FCFS uses non-preemptive scheduling, which means that once a CPU has been assigned to a process, 
+  it stays assigned to that process until it is either not terminated or may be interrupted by an I/O interrupt.
+
+![FCFS](/os/img/FCFS.jpg)
+```
+#include<stdio.h>
+int main()
+{
+    int n,bt[30],wait_t[30],turn_ar_t[30],av_wt_t=0,avturn_ar_t=0,i,j;
+    printf("Please enter the total number of processes(maximum 30):");  // the maximum process that be used to calculate is specified.
+    scanf("%d",&n);
+ 
+    printf("\nEnter The Process Burst Timen");
+    for(i=0;i<n;i++)  // burst time for every process will be taken as input
+    {
+        printf("P[%d]:",i+1);
+        scanf("%d",&bt[i]);
+    }
+ 
+    wait_t[0]=0;   
+ 
+    for(i=1;i<n;i++)
+    {
+        wait_t[i]=0;
+        for(j=0;j<i;j++)
+            wait_t[i]+=bt[j];
+    }
+ 
+    printf("\nProcess\t\tBurst Time\tWaiting Time\tTurnaround Time");
+ 
+    for(i=0;i<n;i++)
+    {
+        turn_ar_t[i]=bt[i]+wait_t[i];
+        av_wt_t+=wait_t[i];
+        avturn_ar_t+=turn_ar_t[i];
+        printf("\nP[%d]\t\t%d\t\t\t%d\t\t\t\t%d",i+1,bt[i],wait_t[i],turn_ar_t[i]);
+    }
+ 
+    av_wt_t/=i;
+    avturn_ar_t/=i;  // average calculation is done here
+    printf("\nAverage Waiting Time:%d",av_wt_t);
+    printf("\nAverage Turnaround Time:%d",avturn_ar_t);
+ 
+    return 0;
+}
+```
